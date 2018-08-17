@@ -66,7 +66,7 @@
                       
                         
                         <li><a href="#price">SIGN UP</a></li>
-                        
+                        <li><a href="#FAQ">FAQ's</a></li>
                         <li><a href="http://bulksms.crazydevelopers.in">Login</a></li>
                       
                       
@@ -142,8 +142,14 @@ Human settlement of Mars is the next giant leap for humankind. Exploring the sol
 
 Mars is the stepping stone of the human race on its voyage into the universe. Human settlement on Mars will aid our understanding of the origins of the solar system, the origins of life and our place in the universe. As with the Apollo Moon landings, a human mission to Mars will inspire generations to believe that all things are possible, anything can be achieved.</h3>
                 </div>
+                <center>
+                <video width="520" height="240" controls autoplay>
+				<source src="vdo/mars1.mp4" type="video/mp4">
+						  Your browser does not support the video tag.
+				</video>
+          </center>
             </div>
-          
+
         </div>
         <div class="space-80"></div>
     </section>
@@ -204,7 +210,7 @@ Mars is the stepping stone of the human race on its voyage into the universe. Hu
             <div class="row">
                 <div class="col-xs-12 col-md-8 col-md-offset-2 text-center wow fadeInUp">
                     <div class="down-offset ">
-                        <img src="images/sms1.gif" alt="">
+                       <img src="images/sms1.gif" width="392" height="294">
                     </div>
                 </div>
             </div>
@@ -248,12 +254,12 @@ mysqli_query("INSERT INTO `mars1`(`fname`, `lname`, `bdate`, `cont`, `nation`, `
                         <div class="space-30"></div>
                                                 <ul class="list-unstyled">
                             <li> <span class="big">Personal Details</span></li>
-                        <form  action="index.php" method="post">
-                            FIRST NAME :<input type="text" name="f1"></br>
-                            LAST NAME  :<input type="text" name="f2"></br>
-                            BIRTH DATE :<input type="date" name="f3"></br>
-                            CONTACT    :<input type="text" name="c1"></br>
-                            NATIONALITY:<input type="text" name="f4">
+                        <form  action="index.php" method="post" class="col-sm-12">
+                            <input type="text" class="form-control" name="f1" placeholder="FIRST NAME"></br>
+                            <input type="text" class="form-control" name="f2" placeholder="LAST NAME"></br>
+                            <input type="date" name="f3" class="form-control" placeholder="BIRTH DATE"></br>
+                            <input type="text" name="c1" class="form-control" placeholder=" CONTACT"></br>
+                            <input type="text" name="f4" class="form-control" placeholder="NATIONALITY">
                       
                       
                         </ul>
@@ -266,15 +272,16 @@ mysqli_query("INSERT INTO `mars1`(`fname`, `lname`, `bdate`, `cont`, `nation`, `
                     <div class="panel price-table active center text-center">
                         <h3 class="text-uppercase price-title">STEP 2</h3>
                         <hr>
-                        <div class="space-30"></div>
+                        <div class="space-30 col-sm-12""></div>
                         <ul class="list-unstyled">
+
                             <li> <span class="big">IDENTITY</span></li>
-                         
-                            IDENTITY 1 :<input type="text" name="f5"></br>
-                            ID NO1     :<input type="text" name="f6"></br>
-                            IDENTITY 2 :<input type="text" name="f7"></br>
-                            ID NO2     :<input type="text" name="f8">
-                      
+                         <div class="form-group col-sm-12">
+                            <input type="text" name="f5" class="form-control" placeholder="IDENTITY 1 :"></br>
+                            <input type="text" name="f6" class="form-control" placeholder="ID NO1"></br>
+                            <input type="text" name="f7" class="form-control" placeholder="IDENTITY 2 :"></br>
+                            <input type="text" name="f8" class="form-control" placeholder="ID NO2">
+                      	</div>
                         </ul>
                         <div class="space-30"></div>
                         <hr>
@@ -288,14 +295,14 @@ mysqli_query("INSERT INTO `mars1`(`fname`, `lname`, `bdate`, `cont`, `nation`, `
                         <div class="space-30"></div>
                         <ul class="list-unstyled">
                             <li><span class="big">ADDRESS</span></li>
-                       
-                               STREET  :<input type="text" name="a1"></br>
-                               AREA    :<input type="text" name="a2"></br>
-                               PIN     :<input type="text" name="a3"></br>
-                               DISTRICT:<input type="text" name="a4"></br>
-                               STATE   :<input type="text" name="a5"></br>
-                               COUNTRY :<input type="text" name="a6"></br>
-                           </form>
+                       <div class="form-group col-sm-12">
+                               <input type="text" name="a1" class="form-control" placeholder="STREET  :"></br>
+                               <input type="text" name="a2" class="form-control" placeholder="AREA    :"></br>
+                               <input type="text" name="a3" class="form-control" placeholder="PIN     :"></br>
+                               <input type="text" name="a4" class="form-control" placeholder="DISTRICT:"></br>
+                               <input type="text" name="a5" class="form-control" placeholder="STATE   :"></br>
+                               <input type="text" name="a6" class="form-control" placeholder="COUNTRY :"></br>
+                           </div>
                         </ul>
                         <div class="space-30"></div>
                         <hr>
@@ -305,11 +312,11 @@ mysqli_query("INSERT INTO `mars1`(`fname`, `lname`, `bdate`, `cont`, `nation`, `
                 </div>
             </div>
         </div>
-        <div class="space-80"></div>
+        <div class="space-80"></div></form>
     </section>
     <!--Price-section/-->
     <!--Question-section-->
-    <section class="fix">
+    <section class="relative fix" id="FAQ">
         <div class="space-80"></div>
         <div class="container">
             <div class="row wow fadeInUp">
@@ -328,7 +335,7 @@ mysqli_query("INSERT INTO `mars1`(`fname`, `lname`, `bdate`, `cont`, `nation`, `
                                 <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse1">How to apply?</a></h4>
                             </div>
                             <div id="collapse1" class="panel-collapse collapse in">
-                                <div class="panel-body">First Signup or Contact Us with given contact details .</div>
+                                <div class="panel-body">First Signup or Login with us. And then complete the whole verfication process.</div>
                             </div>
                         </div>
                         <div class="panel panel-default">
@@ -336,7 +343,7 @@ mysqli_query("INSERT INTO `mars1`(`fname`, `lname`, `bdate`, `cont`, `nation`, `
                                 <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse2">How to get passes?</a></h4>
                             </div>
                             <div id="collapse2" class="panel-collapse collapse">
-                                <div class="panel-body">After sign up you will get the confirmation then after some time you will get passses.</div>
+                                <div class="panel-body">After sign up you will get the confirmation then complete the payment process. After payment process you will get your passes on mail with the specific details.</div>
                             </div>
                         </div>
                         <div class="panel panel-default">
